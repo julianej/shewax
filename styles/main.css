@@ -1,0 +1,452 @@
+/* fontkit my fonts
+
+@import url("//hello.myfonts.net/count/33642b");
+
+@font-face {
+    font-family: 'Marydale-Regular';
+    src: url('fonts/marydale-regular/33642B_0_0.eot');
+    src: url('fonts/marydale-regular/33642B_0_0.eot?#iefix') format('embedded-opentype'),
+        url('fonts/marydale-regular/33642B_0_0.woff2') format('woff2'),
+        url('fonts/marydale-regular/33642B_0_0.woff') format('woff'),
+        url('fonts/marydale-regular/33642B_0_0.ttf') format('truetype'),
+        url('fonts/marydale-regular/33642C_0_0.svg#wf') format('svg');
+} */
+
+@font-face {
+    font-family: 'hurme_geometric_regular';
+    src: url('fonts/hurme_geometric_regular-webfont.woff2') format('woff2'),
+         url('fonts/hurme_geometric_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'hurme_geometric_semibold';
+    src: url('fonts/hurme_geometric_semibold-webfont.woff2') format('woff2'),
+         url('fonts/hurme_geometric_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'marydale_regular';
+    src: url('fonts/marydale_regular-webfont.woff2') format('woff2'),
+         url('fonts/marydale-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Helvetica",Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.4rem;
+    background: #FEFAF8;
+    overflow-x: hidden;
+    color: #676667;
+}
+
+/* LINK STYLE */
+
+a {
+    cursor: pointer;
+    position: relative;
+    margin: 0 2px;
+    color: #e9388a;
+    text-decoration: none;
+}
+
+a:before {
+    position: absolute;
+    margin: 0 auto;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e9388a;
+    content: '';
+    opacity: 0;
+    -webkit-transform: scaleX(.9);
+    transition-property: opacity, -webkit-transform;
+    transition-duration: .3s;
+}
+
+/* FONT STYLE */
+
+p {
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+p strong {
+    font-weight: 400;
+    color: #333333;
+}
+
+
+/* HEADLINES */
+
+h1 {
+    color: #e9388a;
+    font-size: 3rem; /* Some tweener fallback that doesn't look awful */ 
+    /*font-size: 5.4vw; */
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #e9388a;
+    font-size: 1.65rem;
+    line-height: 1.6rem;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: 'marydale_regular';
+    font-weight: 300;
+    color: #333;
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+
+}
+
+
+/* HEADER + WRAPPER + CONTAINER STYLE */
+
+#outer-wrapper {
+    width: 100%;
+    overflow: scroll;
+}
+
+#header-wrapper {
+    background-color: #fff;
+    border-bottom: 1px dashed #ccc;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 90%;
+    z-index: 100;
+    margin: 0 auto;
+    /* header on scroll
+    -webkit-box-shadow: -1px 3px 5px -1px rgba(0,0,0,0.1);
+    -moz-box-shadow: -1px 3px 5px -1px rgba(0,0,0,0.1);
+    box-shadow: -1px 3px 5px -1px rgba(0,0,0,0.1);
+    */
+}
+
+article {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+/* LOGO STYLES */
+
+#logo {
+    margin: auto;
+    flex-grow: 1;
+}
+
+#logo a {
+    display: inline-block;
+}
+
+#logo img {
+    width: 80px;
+}
+
+/* NAVIGATION & MENU */
+
+.header-nav {
+    flex-grow: 2;
+    font-family: 'Helvetica';
+    font-weight: 100;
+    margin: auto;
+}
+
+.header-nav-list li {
+    float: left;
+    margin-right: 20px;
+}
+
+.header-nav-list li a {
+    color: #AAA;
+}
+
+.header-nav-list li a:hover {
+    color: #e9388a;
+}
+
+.header-add-nav {
+    display: flex;
+    flex-grow: 1;
+}
+
+.header-add-nav .add-nav-btn {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.header-add-nav .appointment {
+    display: none;
+}
+
+.header-add-nav .facebook {
+
+}
+
+.fb-btn {
+    margin: auto;
+    display: flex;
+    height: 30px;
+}
+
+.fb-btn h3:before {
+    content: '';
+    background: transparent url('../images/link-arrow.svg') center center no-repeat;
+    display: block;
+    position: absolute;
+    left: -100px;
+    width: 80px;
+    height: 40px;
+    top: -5px;
+}
+
+.fb-btn-icon {
+    background: transparent url('../images/facebook-icon.svg') center center no-repeat;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    float: right;
+    position: relative;
+    top: -10px;
+    left: 25px;
+} 
+
+/* ////////// MOBILE MENU BTN //////////*/
+
+.menuBtn {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    border: 1px dashed #bbb;
+}
+
+.menuBtn:before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    border-bottom: 0px solid #e9388a;;
+    transition-property: border-bottom;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+
+.menuBtn span {
+    margin: 0 0 0 14px;
+    font-size: 1rem;
+    color: #e9388a;
+    text-transform: uppercase;
+}
+
+
+.menuBtn:hover:before {
+    border-bottom: 10px solid #e9388a;
+}
+
+.menuBtn:hover .hamburguer {
+  -webkit-animation: zoom 400ms ease;
+          animation: zoom 400ms ease;
+}
+
+.hamburguer {
+    width: 3rem;
+    height: 2rem;
+    margin: 0.9rem 0.8rem 0.2rem 0.8rem;
+    cursor: pointer;
+}
+
+
+.lines {
+  background-color: #bbb;
+  width: 100%;
+  height: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  -webkit-transform: scaleX(.9);
+  transition-property: height, -webkit-transform;
+  transition-duration: .3s;
+}
+
+.close-hamburguer .lines {
+  cursor: pointer;
+  background-color: #bbb;
+}
+
+.close-hamburguer .line-top {
+  -webkit-transform: translateY(200%) rotate(45deg);
+          transform: translateY(200%) rotate(45deg);
+}
+
+.close-hamburguer .line-mid {
+  opacity: 0;
+}
+
+.close-hamburguer .line-bottom {
+  -webkit-transform: translateY(-200%) rotate(135deg);
+          transform: translateY(-200%) rotate(135deg);
+}
+
+/* ////////// OVERLAY MENU //////////*/
+
+.overlay-menu {
+    display: none;
+/*
+    position: fixed;
+    overflow: scroll;
+    border-top: 1px solid #f1ede8;
+    top: 165px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255,255,255,0.95);
+    opacity: 0.5;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+*/
+}
+
+.overlay-menu a:before {
+    height: 2px;
+}
+
+.overlay-menu.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+  z-index: 80;
+}
+
+.overlay-menu.active .home {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.overlay-menu.active .about {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.overlay-menu.active .works {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.overlay-menu.active .contact {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.overlay-menu.active li {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.overlay-menu-list {
+    padding-bottom: 2rem;
+    margin-bottom: 5px;
+}
+
+.overlay-menu-list li {
+    font-size: 2.8rem;
+    color: #e9388a;
+    line-height: 3.3rem;
+    text-transform: uppercase;
+}
+
+.overlay-menu-contact-data {
+    font-weight: 100;
+    margin-bottom: 100px;
+}
+
+
+#waxing nav li:nth-child(1) a,
+#sugaring nav li:nth-child(2) a,
+#nails nav li:nth-child(3) a,
+#face nav li:nth-child(4) a,
+#body nav li:nth-child(5) a,
+#preise nav li:nth-child(6) a{
+    color: #bbb;
+}
+
+/* ////////// SLIDESHOW GALLERY //////////*/
+
+.slideshow-gallery {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+
+#gallery-slides {
+    white-space: nowrap;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+.slide-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    width: 100%;
+    height: 250px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.slide-item-content {
+    flex: 1 1 20em;
+}
+
+
+.slide-item-img {
+    flex: 2 2 20em;
+}
+
+@media (max-width: 1200px){
+
+    .vp1200 {
+        display: block;
+    } 
+}

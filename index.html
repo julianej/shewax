@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+
+  <title>The title tag appears in the top of the browser page and it’s a must according to the W3C.
+It’s also one of the two most important tags for seo. The title tag is used to identify the page among others pages and to tell shortly what the page is about, it’s like title of a book chapter.</title>
+  <meta name="description" content="Define a description of your web page. Keep it between 150 and 160 characters.">
+  <meta name="author" content="Define the author of a page">
+  <meta name="publisher" content="JE | www.julianejeske.com">
+  <meta name="creator" content="Juliane Jeske - Design and Development">
+  <meta name="page-type" content="Info Seite">
+
+  <!-- This tag is used for localized sites to let the search engine know what is the right version of your content. 
+When the site has more than one language version ,you need to add the “alternate” tag to prevent duplicates and for better user experience . -->
+  <link rel=”alternate” href=”http://mysite.com” hreflang=”en-au” />
+
+  <!-- markup for Facebook -->
+  <meta property=”og:title” content=”Some Facebook title”/>
+  <meta property=”og:url” content=”https://pagename.com”/>
+  <meta property="og:image" content="imagename.png" />
+  <meta property=”og:type” content=”specify the type of object for your content, it can be: blog, website or article and more”/>
+  <meta property=”og:description” content=”Put your content here”/>
+
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Some Google Title" />
+  <meta itemprop="description" content="Page Description" />
+  <meta itemprop="image" content="imagename.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main_v2.css">
+  <link rel="stylesheet" href="styles/flickity.css">
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="outer-wrapper">
+    <div id="header-wrapper">
+      <header>
+        <h1>
+          <a href="http://www.shewax.de">She Wax - das Waxing und Kosmetikstudio in Berlin. Woman Only!
+          <img class="logo-img" src="images/logo-shewax.png" alt="Verlinkung zur She Wax Startseite" title="She Wax Logo" />
+          </a>
+        </h1>
+        <nav class="header-nav">
+          <!-- MENÜ BTN Mobile -->
+          <a class="menuBtn">
+            <div class="hamburguer">
+              <div class="lines line-top"></div>
+              <div class="lines line-mid"></div>
+              <div class="lines line-bottom"></div>
+            </div>
+            <span>Menü<span>
+          </a>
+          <!-- MENÜ BTN Mobile end -->
+          <ul class="header-nav-list">
+            <li><a href="">Waxing</a></li>
+            <li><a href="">Sugaring</a></li>
+            <li><a href="">Nails</a></li>
+            <li><a href="">Face</a></li>
+            <li><a href="">Body</a></li>
+            <li><a href="">Preise</a></li>
+            <li class="hidden"><a href="">Team</a></li>
+            <li><a href="">Kontakt</a></li>
+            <li class="hidden"><a href="">FAQ</a></li>
+          </ul>
+        </nav> 
+        <!-- BTN FACEBOOK + BOOKING -->
+        <div class="header-add-nav">
+          <a class="add-nav-btn fb-btn">
+            <div class="btn">
+              <h4>Jetzt auch bei Facebook</h3>
+            </div>
+            <div class="fb-icon" aria-hidden="true"></div>
+          </a>
+        </div> 
+      </header> 
+    </div>
+    <!-- OVERLAY MENÜ Mobile 
+    <div class="overlay-menu">
+      <ul class="overlay-menu-list">
+        <li><a href="" title="">Waxing</a></li>
+        <li><a href="" title="">Sugaring</a></li>
+        <li><a href="" title="">Nails</a></li>
+        <li><a href="" title="">Face</a></li>
+        <li><a href="" title="">Body</a></li>
+        <li><a href="" title="">Preise</a></li>
+        <li><a href="" title="">Termin vereinbaren</a></li>
+      </ul>
+      <p><strong>Wir beraten Sie gern! Ihr She Wax Team.</strong></p>
+      <ul class="overlay-menu-contact-data">
+        <li>She Wax Inh. Nevin Bernt, Schloßstrase 1, 12163 Berlin (im FORUM Steglitz 2. OG)</li>
+        <li>Öffnungszeiten: Montag - Samstag 10 - 20Uhr</li>
+        <li>Telefon: <a href="tel:+493079788227">+49 30 / 79 78 82 27</a> Fax: 030 - 797 89 541 </li>
+        <li><a href="mailto:info@shewax.de" target="_top" title="E-Mailadresse">info@shewax.de</a></li>
+      </ul>
+    </div> -->
+    <!-- OVERLAY MENÜ Mobile end -->
+    <article>
+      <section id="slideshow-gallery-wrap">
+        <!-- <button onclick="prev()">«</button> -->
+        <div class="slideshow-gallery">
+          <ul id="gallery-slides">
+            <li class="slide-item">
+              <div class="slide-item-content">
+                <h2>Pflege von Kopf bis Fuß</h1>
+                <h3>- und das mit Liebe zum Detail!</h2>
+                <a href="" alt="Zur Terminbuchung" >
+                  <div class="btn termin-btn">
+                    <h4>Termin buchen</h3>
+                  </div>
+                </a>
+              </div> 
+              <div class="slide-item-img">
+                <img src="images/bg-index.jpg" title="She Wax Moodpicture" alt="She Wax Moodpicture"/>
+              </div>
+           </li>
+          </ul>
+        </div>
+        <!-- <button onclick="next()">»</button> -->
+      </section>
+      <section id="info-wrap" class="bg-fff">
+        <div class="info-service flex-item1">
+          <h3>Unser Service</h3>
+          <h2>Waxing</br> Sugaring</br> Face </br> Body</h2>
+        </div>
+        <div class="info-text flex-item2">
+          <p><strong>Pflege von Kopf bis Fuß - und das mit Liebe zum Detail!</strong></p>
+          <p>Dafür steht She Wax, Ihr professionelles Waxing- und Kosmetikstudio in Berlin Steglitz.</p>
+          <p>Entdecken Sie unsere einzigartige Wohlfühlatmosphäre in der Behaglichkeit und Diskretion groß geschrieben werden. Bei uns gleicht ein Waxing oder Sugaring eher einer Wellnessbehandlung und ist: <strong>WOMAN ONLY!</strong></p>
+          </p>
+          <p>Besuchen Sie uns in Berlin Steglitz, wir freuen uns auf Ihren Besuch.</p>
+          <p><strong>Ihr She Wax Team!</strong></p>
+        </div>
+      </section>
+    </article>
+  </div>
+
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
