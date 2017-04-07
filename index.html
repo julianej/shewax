@@ -10,7 +10,8 @@ It’s also one of the two most important tags for seo. The title tag is used to
   <meta name="author" content="Define the author of a page">
   <meta name="publisher" content="JE | www.julianejeske.com">
   <meta name="creator" content="Juliane Jeske - Design and Development">
-  <meta name="page-type" content="Info Seite">
+  <meta name="page-type" content="Startseite">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- This tag is used for localized sites to let the search engine know what is the right version of your content. 
 When the site has more than one language version ,you need to add the “alternate” tag to prevent duplicates and for better user experience . -->
@@ -30,10 +31,11 @@ When the site has more than one language version ,you need to add the “alterna
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/main_v2.css">
+  <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/flickity.css">
 
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+  <!-- Scripts -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -104,46 +106,78 @@ When the site has more than one language version ,you need to add the “alterna
     </div> -->
     <!-- OVERLAY MENÜ Mobile end -->
     <article>
-      <section id="slideshow-gallery-wrap">
-        <!-- <button onclick="prev()">«</button> -->
-        <div class="slideshow-gallery">
-          <ul id="gallery-slides">
-            <li class="slide-item">
+      <section id="gallery">
+        <div class="gallery">
+          <div class="gallery-cell">
+            <div class="flex-wrap">
               <div class="slide-item-content">
                 <h2>Pflege von Kopf bis Fuß</h1>
-                <h3>- und das mit Liebe zum Detail!</h2>
+                <h3>- und das mit Liebe zum Detail. Nur bei She Wax! Nur für Dich.</h3>
                 <a href="" alt="Zur Terminbuchung" >
                   <div class="btn termin-btn">
-                    <h4>Termin buchen</h3>
+                    <h4>Termin buchen</h4>
                   </div>
                 </a>
               </div> 
               <div class="slide-item-img">
                 <img src="images/bg-index.jpg" title="She Wax Moodpicture" alt="She Wax Moodpicture"/>
               </div>
-           </li>
-          </ul>
+            </div>
+          </div>
+          <div class="gallery-cell">
+            <div class="flex-wrap">
+              <div class="slide-item-content">
+                <h2>Black Friday 20% Rabatt</h1>
+                <h3>vom 03.03 - 07.04.2017<br> Schaut bei uns vorbei und sichert Euch 20% Rabatt auf alle Peelingprodukte von Dermalogica. </h3>
+                <a href="" alt="Zur Terminbuchung" >
+                  <div class="btn termin-btn">
+                    <h4>Termin buchen</h4>
+                  </div>
+                </a>
+              </div> 
+              <div class="slide-item-img">
+                <img src="images/slide-black-friday.jpg" title="She Wax Moodpicture Dermalogica" alt="She Wax Moodpicture"/>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-cell">
+            <div class="flex-wrap">
+              <div class="slide-item-content">
+                <h2>Ausbildung zur depiladora</h1>
+                <h3>Sie interessieren sich für eine Ausbildung als Depiladora? Dann sind Sie bei uns richtig. Lassen Sie sich bei Uns ausbilden - professionel & mit Zertifikat.</h3>
+                <a href="" alt="Zur Terminbuchung" >
+                  <div class="btn">
+                    <h4>Infos anfordern</h4>
+                  </div>
+                </a>
+              </div> 
+              <div class="slide-item-img">
+                <img src="images/slide-depiladora.jpg" title="She Wax Ausbildung zur Depiladora" alt="She Wax Moodpicture Depiladora"/>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- <button onclick="next()">»</button> -->
       </section>
-      <section id="info-wrap" class="bg-fff">
-        <div class="info-service flex-item1">
-          <h3>Unser Service</h3>
-          <h2>Waxing</br> Sugaring</br> Face </br> Body</h2>
-        </div>
-        <div class="info-text flex-item2">
-          <p><strong>Pflege von Kopf bis Fuß - und das mit Liebe zum Detail!</strong></p>
-          <p>Dafür steht She Wax, Ihr professionelles Waxing- und Kosmetikstudio in Berlin Steglitz.</p>
-          <p>Entdecken Sie unsere einzigartige Wohlfühlatmosphäre in der Behaglichkeit und Diskretion groß geschrieben werden. Bei uns gleicht ein Waxing oder Sugaring eher einer Wellnessbehandlung und ist: <strong>WOMAN ONLY!</strong></p>
-          </p>
-          <p>Besuchen Sie uns in Berlin Steglitz, wir freuen uns auf Ihren Besuch.</p>
-          <p><strong>Ihr She Wax Team!</strong></p>
+      <section id="service" class="flex-wrap">
+        <div class="inner-content-wrap">
+          <div class="flex-item1">
+            <h3>Unser Service für Dich</h3>
+            <h2>Waxing</br> Sugaring</br> Face </br> Body<br> Nails</h2>
+          </div>
+          <div class="info-text flex-item2">
+            <p><strong>Pflege von Kopf bis Fuß - und das mit Liebe zum Detail!</strong></p>
+            <p>Dafür steht She Wax, Ihr professionelles Waxing- und Kosmetikstudio in Berlin Steglitz.</p>
+            <p>Entdecken Sie unsere einzigartige Wohlfühlatmosphäre in der Behaglichkeit und Diskretion groß geschrieben werden. Bei uns gleicht ein Waxing oder Sugaring eher einer Wellnessbehandlung und ist: <strong>WOMAN ONLY!</strong></p>
+            </p>
+            <p>Besuchen Sie uns in Berlin Steglitz, wir freuen uns auf Ihren Besuch.</p>
+            <p><strong>Ihr She Wax Team!</strong></p>
+          </div>
         </div>
       </section>
     </article>
   </div>
-
-
+  <script src="scripts/jquery-3.2.0.min.js"></script>
+  <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 </html>
